@@ -7,8 +7,8 @@ function LoginScreen(): JSX.Element {
         <Image style= {styles.logo}resizeMode="contain" source={require('../assets/imagens/user.png')}></Image>
         <View style= {styles.card}>
             <Text style= {styles.title}>Login</Text>
-            <TextInput placeholder="E-mail" placeholderTextColor={"151413"}></TextInput>
-            <TextInput placeholder="Senha" placeholderTextColor={"#151413"}></TextInput>
+            <TextInput style={styles.input} placeholder="E-mail" placeholderTextColor={"#151413"}></TextInput>
+            <TextInput style={styles.input} placeholder="Senha" placeholderTextColor={"#151413"}></TextInput>
         </View>
        </View>
     );
@@ -44,6 +44,16 @@ const styles = StyleSheet.create({
         color: '#151413',
         marginBottom: 20,
         textAlign: 'center'
+    },
+    input: {
+        backgroundColor: '#D7D4D1',
+        height: 40,
+        marginBottom: 20,
+        paddingHorizontal: 10,
+        borderRadius: 8,
+        borderWidth: 1,
+        borderColor: '#1e90ff'
+
 
     }
 
