@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, StyleSheet, Text, TextInput, View } from "react-native";
+import { Image, StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native";
 
 function LoginScreen(): JSX.Element {
     return (
@@ -9,6 +9,9 @@ function LoginScreen(): JSX.Element {
             <Text style= {styles.title}>Login</Text>
             <TextInput style={styles.input} placeholder="E-mail" placeholderTextColor={"#151413"}></TextInput>
             <TextInput style={styles.input} placeholder="Senha" placeholderTextColor={"#151413"}></TextInput>
+            <TouchableOpacity>
+                <Text>Entrar</Text>
+            </TouchableOpacity>
         </View>
        </View>
     );
@@ -30,7 +33,7 @@ const styles = StyleSheet.create({
     card: {
         backgroundColor: '#FFFFFF',
         width: 300,
-        borderRadius: 10,
+        borderRadius: 20,
         padding: 20,
         elevation: 3,
         shadowColor: 'rgba(0,0,0,0.3)',
