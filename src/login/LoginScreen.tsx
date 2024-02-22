@@ -13,10 +13,10 @@ function LoginScreen(): JSX.Element {
                 <Text style={styles.buttonText}>Entrar</Text>
             </TouchableOpacity>
             <TouchableOpacity>
-                <Text>Esqueceu a senha?</Text>
+                <Text style={styles.forgotPassword}>Esqueceu a senha?</Text>
             </TouchableOpacity>
             <TouchableOpacity>
-                <Text>Não possui conta? Cadastre-se</Text>
+                <Text style={styles.forgotPassword}>Não possui conta? Cadastre-se!</Text>
             </TouchableOpacity>
         </View>
        </View>
@@ -74,8 +74,12 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontSize: 16,
         lineHeight: 40,
-        
     },
+    forgotPassword: {
+        color: '#1e90ff',
+        textAlign: 'center',
+        marginTop: 10,
+    }
 
 });
 
