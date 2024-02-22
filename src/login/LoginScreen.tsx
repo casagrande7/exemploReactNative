@@ -39,7 +39,11 @@ const styles = StyleSheet.create({
         shadowRadius: 2,
     },
     title: {
-        
+        fontSize: 25,
+        fontWeight: 'bold',
+        color: '#151413',
+        marginBottom: 20,
+        textAlign: 'center'
 
     }
 
