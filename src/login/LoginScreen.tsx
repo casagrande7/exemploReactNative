@@ -9,8 +9,14 @@ function LoginScreen(): JSX.Element {
             <Text style= {styles.title}>Login</Text>
             <TextInput style={styles.input} placeholder="E-mail" placeholderTextColor={"#151413"}></TextInput>
             <TextInput style={styles.input} placeholder="Senha" placeholderTextColor={"#151413"}></TextInput>
+            <TouchableOpacity style={styles.button}>
+                <Text style={styles.buttonText}>Entrar</Text>
+            </TouchableOpacity>
             <TouchableOpacity>
-                <Text>Entrar</Text>
+                <Text>Esqueceu a senha?</Text>
+            </TouchableOpacity>
+            <TouchableOpacity>
+                <Text>Não possui conta? Cadastre-se</Text>
             </TouchableOpacity>
         </View>
        </View>
@@ -56,9 +62,20 @@ const styles = StyleSheet.create({
         borderRadius: 8,
         borderWidth: 1,
         borderColor: '#1e90ff'
+    },
+    button: {
+        backgroundColor: '#1e90ff',
+        height: 40,
+        borderRadius: 12
 
-
-    }
+    },
+    buttonText: {
+        color: '#FFFFFF',
+        textAlign: 'center',
+        fontSize: 16,
+        lineHeight: 40,
+        
+    },
 
 });
 
